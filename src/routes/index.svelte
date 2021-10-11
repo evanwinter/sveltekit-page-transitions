@@ -1,2 +1,5 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>SvelteKit Page Transition Example</h1>
+<p>
+  Navigate between pages using the links above, and an animated page transition
+  will occur.
+</p>
