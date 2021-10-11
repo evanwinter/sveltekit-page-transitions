@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "build"
+  environment = { NODE_VERSION = "16.11.0" }
  
 [dev]
  command = "svelte-kit dev"
