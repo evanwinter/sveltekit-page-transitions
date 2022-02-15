@@ -1,15 +1,11 @@
-<script>
-  import PageTransition from "$lib/components/PageTransition.svelte"
-  export let key
-</script>
-
 <!-- 1. Assign current route's path to `key` prop -->
 <script context="module">
-  export const load = async ({ page }) => ({
-    props: {
-      key: page.path,
-    },
-  })
+  export const load = async ({ url }) => ({ props: { url } });
+</script>
+
+<script>
+  import PageTransition from "$lib/components/PageTransition.svelte";
+  export let url;
 </script>
 
 <div class="layout">
@@ -18,8 +14,8 @@
     <a href="/about">About</a>
   </nav>
 
-  <!-- 2. Pass `key` prop to the component so it knows when to transition -->
-  <PageTransition refresh={key}>
+  <!-- 2. Pass `url` prop to the component so it knows when to transition -->
+  <PageTransition {url}>
     <slot />
   </PageTransition>
 </div>
