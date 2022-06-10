@@ -1,12 +1,14 @@
-<!-- 1. Assign current route's path to `url` prop -->
+<!-- 1. Assign current route's path to `pathname` prop -->
 <script context="module">
   /** @type {import('@sveltejs/kit').Load} */
-  export const load = async ({ url }) => ({ props: { url } });
+  export const load = async ({ url: { pathname } }) => ({
+    props: { pathname },
+  });
 </script>
 
 <script>
   import PageTransition from "$lib/components/PageTransition.svelte";
-  export let url;
+  export let pathname;
 </script>
 
 <div class="layout">
@@ -15,8 +17,8 @@
     <a href="/about">About</a>
   </nav>
 
-  <!-- 2. Pass `url` prop to the component so it knows when to transition -->
-  <PageTransition {url}>
+  <!-- 2. Pass `pathname` prop to the component so it knows when to transition -->
+  <PageTransition {pathname}>
     <slot />
   </PageTransition>
 </div>
