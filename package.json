@@ -9,7 +9,7 @@
   "type": "module",
   "devDependencies": {
     "@sveltejs/adapter-netlify": "^1.0.0-next.72",
-    "@sveltejs/kit": "^1.0.0-next.436",
+    "@sveltejs/kit": "next",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",

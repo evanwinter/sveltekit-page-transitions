@@ -1,8 +1,6 @@
 <script>
 	import PageTransition from '$lib/components/PageTransition.svelte';
-
-	/** @type {import('./$types').LayoutData} */
-	export let data;
+	import { page } from '$app/stores';
 </script>
 
 <div class="layout">
@@ -11,7 +9,7 @@
 		<a href="/about">About</a>
 	</nav>
 
-	<PageTransition pathname={data.pathname}>
+	<PageTransition pathname={$page.url.pathname}>
 		<slot />
 	</PageTransition>
 </div>
