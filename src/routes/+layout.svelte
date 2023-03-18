@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import PageTransition from '$lib/components/PageTransition.svelte';
+	import type { LayoutServerData } from './$types';
 
-	/** @type {import('./$types').LayoutData} */
-	export let data;
+	export let data: LayoutServerData;
 </script>
 
 <div class="layout">

@@ -5,13 +5,9 @@
 		<title>SvelteKit Page Transitions Example</title>
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Web Monetization payment pointer -->
-    <meta name="monetization" content="$ilp.uphold.com/3dH6dNfywHzx" />
-
 		%sveltekit.head%
 	</head>
-	<body>
-		<div id="svelte">%sveltekit.body%</div>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
