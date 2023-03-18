@@ -2,9 +2,9 @@
 
 Simple page transition effect in a SvelteKit application.
 
-[Demo]('https://sveltekit-page-transition.netlify.app/')
+[Demo](https://sveltekit-page-transition.netlify.app/)
 
-> This is left as a bare-minimum implementation. Doing a different transition effect is a matter of tweaking the `in` and `out` directives and their options &mdash; [learn more about Svelte transitions here]('https://svelte.dev/docs#template-syntax-element-directives-transition-fn').
+> This is left as a bare-minimum implementation. Doing a different transition effect is a matter of tweaking the `in` and `out` directives and their options &mdash; [learn more about Svelte transitions here](https://svelte.dev/docs#template-syntax-element-directives-transition-fn).
 
 ## Developing
 
